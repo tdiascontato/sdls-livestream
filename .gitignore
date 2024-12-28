@@ -1,0 +1,11 @@
+venv/
+
+# Arquivos temporários do Python
+*.pyc
+__pycache__/
+
+.vscode/
+.idea/
+*.swp
+
+*.log
