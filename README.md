@@ -20,3 +20,27 @@ No chrome com a [ MPEG-DASH + HLS Playback](https://chromewebstore.google.com/de
 ```
 http://localhost:8081/live/.m3u8
 ```
+
+
+# Live Streaming Server with NGINX
+
+Live streaming server
+
+## How to run
+
+Upload the containers using docker compose
+```
+docker-compose up --build
+```
+
+Open [OBS](https://obsproject.com/pt-br/download) > Settings > Broadcast > Server
+```
+rtmp://localhost:1935/live
+```
+Click ok and then click **Start broadcast**
+
+## How to watch the broadcast
+In chrome with [MPEG-DASH + HLS Playback](https://chromewebstore.google.com/detail/native-mpeg-dash-+-hls-pl/cjfbmleiaobegagekpmlhmaadepdeedn) or in Safari access:
+```
+http://localhost:8081/live/.m3u8
+```
